@@ -11,7 +11,7 @@ export default function Footer() {
 
             {/* Top Footer CTA Strip */}
             <div style={{ borderBottom: '1px solid rgba(198, 161, 91, 0.3)', backgroundColor: 'var(--color-dark-black)' }}>
-                <div className="container" style={{
+                <div className="container footer-cta-container" style={{
                     padding: '4rem 0',
                     display: 'flex',
                     flexWrap: 'wrap',
@@ -366,6 +366,21 @@ export default function Footer() {
 
                 .footer-bottom-link:hover {
                     color: var(--color-gold);
+                }
+
+                @media (max-width: 768px) {
+                    .footer-cta-container {
+                        flex-direction: column !important;
+                        text-align: center !important;
+                        justify-content: center !important;
+                    }
+                    .footer-cta-container h2 {
+                        text-align: center !important;
+                    }
+                    .footer-cta-container p {
+                        text-align: center !important;
+                        margin: 0 auto !important;
+                    }
                 }
             `}</style>
         </footer>

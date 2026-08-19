@@ -81,7 +81,7 @@ export default function Home() {
                             </div>
                         </div>
 
-                        <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center', position: 'relative' }} className="fade-in">
+                        <div style={{ flex: '1 1 400px', display: 'flex', justifyContent: 'center', position: 'relative' }} className="fade-in hero-img-col">
                             <div style={{
                                 position: 'absolute',
                                 top: '5%', left: '-5%', right: '5%', bottom: '-5%',
@@ -211,7 +211,23 @@ export default function Home() {
             {/* Professional Approach */}
             <section className="section-padding bg-dark" style={{ borderTop: '1px solid rgba(255,255,255,0.1)' }}>
                 <div className="container">
-                    <SectionTitle title="Committed to Excellence. Trusted for Results." subtitle="Our Approach" centered />
+                    <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
+                        <span style={{
+                            color: 'var(--color-gold)',
+                            textTransform: 'uppercase',
+                            letterSpacing: '2px',
+                            fontWeight: '600',
+                            fontSize: '0.875rem',
+                            display: 'block',
+                            marginBottom: '0.5rem'
+                        }}>
+                            Our Approach
+                        </span>
+                        <h2 style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', color: 'var(--color-white)', margin: 0, fontFamily: 'var(--font-secondary)', fontWeight: '400', lineHeight: '1.4' }}>
+                            Committed to <span style={{ color: 'var(--color-gold)' }}>Excellence.</span><br />
+                            Trusted for <span style={{ color: 'var(--color-gold)' }}>Results.</span>
+                        </h2>
+                    </div>
 
                     <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
                         <p style={{ fontSize: '1.5rem', fontFamily: 'var(--font-secondary)', color: 'var(--color-gold)', fontStyle: 'italic' }}>
@@ -262,6 +278,11 @@ export default function Home() {
         }
         .service-row:hover .service-arrow {
           transform: translateX(10px);
+        }
+        @media (max-width: 991px) {
+           .hero-img-col {
+              margin-bottom: 5rem;
+           }
         }
         @media (max-width: 768px) {
            .service-row {
