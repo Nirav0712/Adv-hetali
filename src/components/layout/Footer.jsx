@@ -12,7 +12,7 @@ export default function Footer() {
             {/* Top Footer CTA Strip */}
             <div style={{ borderBottom: '1px solid rgba(198, 161, 91, 0.3)', backgroundColor: 'var(--color-dark-black)' }}>
                 <div className="container footer-cta-container">
-                    <div style={{ flex: '1 1 500px' }}>
+                    <div style={{ flex: '1 1 500px' }} className="footer-cta-text">
                         <h2 style={{
                             fontSize: 'clamp(1.75rem, 4vw, 2.5rem)',
                             fontFamily: 'var(--font-secondary)',
@@ -375,9 +375,13 @@ export default function Footer() {
                 }
 
                 @media (max-width: 768px) {
+                    .footer-cta-text {
+                        flex-basis: auto !important;
+                        flex: none !important;
+                    }
                     .footer-cta-container {
                         padding: 2.5rem 0;
-                        gap: 1.5rem;
+                        gap: 3rem;
                         flex-direction: column !important;
                         text-align: center !important;
                         justify-content: center !important;

@@ -76,7 +76,7 @@ export default function Header() {
                         }}
                     />
 
-                    <span>Advocate Hetali H. Prajapati</span>
+                    <span>Advocate <br /> Hetali H. Prajapati</span>
                 </Link>
 
                 {/* Desktop Nav */}
