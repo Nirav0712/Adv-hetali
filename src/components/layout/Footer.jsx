@@ -11,14 +11,7 @@ export default function Footer() {
 
             {/* Top Footer CTA Strip */}
             <div style={{ borderBottom: '1px solid rgba(198, 161, 91, 0.3)', backgroundColor: 'var(--color-dark-black)' }}>
-                <div className="container footer-cta-container" style={{
-                    padding: '4rem 0',
-                    display: 'flex',
-                    flexWrap: 'wrap',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    gap: '2rem'
-                }}>
+                <div className="container footer-cta-container">
                     <div style={{ flex: '1 1 500px' }}>
                         <h2 style={{
                             fontSize: 'clamp(1.75rem, 4vw, 2.5rem)',
@@ -55,7 +48,7 @@ export default function Footer() {
             </div>
 
             {/* Main Footer Content */}
-            <div className="container footer-grid" style={{ paddingTop: '5rem', paddingBottom: '4rem' }}>
+            <div className="container footer-grid">
 
                 {/* Column 1 - Brand */}
                 <div className="footer-col">
@@ -249,10 +242,21 @@ export default function Footer() {
             </div>
 
             <style>{`
+                .footer-cta-container {
+                    padding: 4rem 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 2rem;
+                }
+
                 .footer-grid {
                     display: grid;
                     grid-template-columns: repeat(4, 1fr);
                     gap: 3rem;
+                    padding-top: 5rem;
+                    padding-bottom: 4rem;
                 }
 
                 @media (max-width: 1024px) {
@@ -264,7 +268,9 @@ export default function Footer() {
                 @media (max-width: 640px) {
                     .footer-grid {
                         grid-template-columns: 1fr;
-                        gap: 3rem;
+                        gap: 2rem;
+                        padding-top: 2.5rem;
+                        padding-bottom: 2rem;
                     }
                 }
 
@@ -370,12 +376,15 @@ export default function Footer() {
 
                 @media (max-width: 768px) {
                     .footer-cta-container {
+                        padding: 2.5rem 0;
+                        gap: 1.5rem;
                         flex-direction: column !important;
                         text-align: center !important;
                         justify-content: center !important;
                     }
                     .footer-cta-container h2 {
                         text-align: center !important;
+                        margin-bottom: 0.25rem !important;
                     }
                     .footer-cta-container p {
                         text-align: center !important;

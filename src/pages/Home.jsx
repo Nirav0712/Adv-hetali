@@ -1,6 +1,5 @@
 import Button from '../components/common/Button';
 import SectionTitle from '../components/common/SectionTitle';
-import CTASection from '../components/common/CTASection';
 import { Scale, Users, Home as HomeIcon, FileSignature, Landmark, ArrowRight, ShieldCheck, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -259,17 +258,6 @@ export default function Home() {
                     </div>
                 </div>
             </section>
-
-            <CTASection
-                title="Need Professional Legal Assistance?"
-                subtitle="Your Rights. Our Responsibility."
-                buttonText="Book a Consultation &rarr;"
-                buttonLink="/contact"
-            />
-
-            <div style={{ textAlign: 'center', backgroundColor: 'var(--color-black)', paddingBottom: '3rem' }}>
-                <a href="tel:+916351447212" style={{ color: 'var(--color-white)', fontSize: '1.25rem', textDecoration: 'none', letterSpacing: '2px' }}>+91 63514 47212</a>
-            </div>
 
             <style>{`
         .service-row:hover {
