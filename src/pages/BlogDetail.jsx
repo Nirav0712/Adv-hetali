@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, CornerDownRight } from 'lucide-react';
-import CTASection from '../components/common/CTASection';
 import { blogData } from '../data/blogData';
 
 export default function BlogDetail() {
@@ -207,14 +206,6 @@ export default function BlogDetail() {
                     </div>
                 </div>
             </section>
-
-            {/* Final CTA */}
-            <CTASection
-                title="Need Professional Legal Guidance?"
-                subtitle="Your Rights. Our Responsibility."
-                buttonText="Book a Consultation &rarr;"
-                buttonLink="/contact"
-            />
 
             <style>{`
         .fade-in {

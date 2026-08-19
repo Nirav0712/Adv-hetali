@@ -1,5 +1,4 @@
 import SectionTitle from '../components/common/SectionTitle';
-import CTASection from '../components/common/CTASection';
 import { Home, Users, FileSignature, Scale, Briefcase, ChevronRight, FileText } from 'lucide-react';
 import { useState } from 'react';
 
@@ -148,13 +147,6 @@ export default function Services() {
                     </div>
                 </div>
             </section>
-
-            <CTASection
-                title="Don't see your specific issue?"
-                subtitle="Contact us to discuss your circumstances. We offer comprehensive legal assessments."
-                buttonText="Book a Consultation"
-                buttonLink="/contact"
-            />
 
             {/* Modal */}
             {activeModal && (

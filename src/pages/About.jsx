@@ -1,5 +1,4 @@
 import SectionTitle from '../components/common/SectionTitle';
-import CTASection from '../components/common/CTASection';
 import { Shield, Target, Award, Users, CheckCircle } from 'lucide-react';
 
 export default function About() {
@@ -71,12 +70,6 @@ export default function About() {
                     </p>
                 </div>
             </section>
-
-            <CTASection
-                title="Ready to discuss your case?"
-                buttonText="Schedule a Consultation"
-                buttonLink="/contact"
-            />
         </div>
     );
 }
