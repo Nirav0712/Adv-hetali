@@ -192,13 +192,13 @@ Thank you.`;
             </section>
 
             {/* Map Placeholder */}
-            <section style={{ height: '400px', backgroundColor: 'var(--color-off-white)', position: 'relative' }}>
+            {/* <section style={{ height: '400px', backgroundColor: 'var(--color-off-white)', position: 'relative' }}>
                 <div style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', color: 'var(--color-gray)' }}>
                     <MapPin size={48} style={{ marginBottom: '1.5rem', color: 'var(--color-gold)' }} />
                     <h3 style={{ fontSize: '1.5rem', fontFamily: 'var(--font-secondary)', fontWeight: '500', color: 'var(--color-black)' }}>Interactive Map Integration Available</h3>
                     <p style={{ marginTop: '0.5rem' }}>This section is reserved for the Google Maps iframe placeholder.</p>
                 </div>
-            </section>
+            </section> */}
 
             <style>{`
                 .contact-icon-wrapper {
