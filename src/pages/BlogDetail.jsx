@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { ArrowLeft, ArrowRight, CornerDownRight } from 'lucide-react';
+import SEO from '../components/SEO';
 import { blogData } from '../data/blogData';
 
 export default function BlogDetail() {
@@ -17,11 +18,6 @@ export default function BlogDetail() {
         const timer = setTimeout(() => {
             const foundPost = blogData.find((b) => b.slug === slug);
             setPost(foundPost || null);
-            if (foundPost) {
-                document.title = `${foundPost.title} | Advocate Hetali H. Prajapati`;
-            } else {
-                document.title = 'Blog Not Found | Advocate Hetali H. Prajapati';
-            }
             setLoading(false);
         }, 300); // 300ms transition time
 
@@ -65,7 +61,36 @@ export default function BlogDetail() {
 
     return (
         <div className="fade-in" style={{ animationDuration: '0.6s' }}>
-
+            <SEO
+                title={`${post.title} | Advocate Hetali H. Prajapati`}
+                description={post.excerpt}
+                url={`/blog/${post.slug}`}
+                type="article"
+                image={post.image || 'https://advocatehetali.com/favicon.svg'}
+                schema={{
+                    "@context": "https://schema.org",
+                    "@type": "Article",
+                    "headline": post.title,
+                    "description": post.excerpt,
+                    "image": post.image || "https://advocatehetali.com/favicon.svg",
+                    "author": {
+                        "@type": "Person",
+                        "name": post.author
+                    },
+                    "publisher": {
+                        "@type": "Organization",
+                        "name": "Advocate Hetali H. Prajapati",
+                        "logo": {
+                            "@type": "ImageObject",
+                            "url": "https://advocatehetali.com/favicon.svg"
+                        }
+                    },
+                    "mainEntityOfPage": {
+                        "@type": "WebPage",
+                        "@id": `https://advocatehetali.com/blog/${post.slug}`
+                    }
+                }}
+            />
             {/* Blog Hero section */}
             <section style={{ backgroundColor: 'var(--color-black)', color: 'var(--color-white)', paddingTop: '6rem', paddingBottom: '0' }}>
                 <div className="container" style={{ maxWidth: '900px' }}>

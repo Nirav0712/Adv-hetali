@@ -1,4 +1,5 @@
 import { useState, useRef } from 'react';
+import SEO from '../components/SEO';
 import SectionTitle from '../components/common/SectionTitle';
 import Button from '../components/common/Button';
 import { MapPin, Phone, Mail } from 'lucide-react';
@@ -65,6 +66,11 @@ Thank you.`;
 
     return (
         <div>
+            <SEO
+                title="Contact Advocate in Ahmedabad | Legal Consultation | Hetali H. Prajapati"
+                description="Get in touch with Advocate Hetali H. Prajapati for professional legal consultation and solutions in Ahmedabad. Schedule your appointment today."
+                url="/contact"
+            />
             <section style={{
                 padding: '10rem 0 6rem',
                 backgroundColor: 'var(--color-black)',

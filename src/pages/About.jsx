@@ -1,9 +1,34 @@
 import SectionTitle from '../components/common/SectionTitle';
+import SEO from '../components/SEO';
 import { Shield, Target, Award, Users, CheckCircle } from 'lucide-react';
 
 export default function About() {
     return (
         <div>
+            <SEO
+                title="About Advocate Hetali H. Prajapati | Legal Professional in Ahmedabad"
+                description="Learn about Advocate Hetali H. Prajapati, B.Com., LL.B. (Gold Medalist). Offering professional legal guidance, documentation, and consulting in Ahmedabad."
+                url="/about"
+                schema={{
+                    "@context": "https://schema.org",
+                    "@type": "Person",
+                    "name": "Hetali H. Prajapati",
+                    "jobTitle": "Advocate",
+                    "url": "https://advocatehetali.com/about",
+                    "affiliation": {
+                        "@type": "Organization",
+                        "name": "Advocate Hetali H. Prajapati"
+                    },
+                    "location": {
+                        "@type": "Place",
+                        "address": {
+                            "@type": "PostalAddress",
+                            "addressLocality": "Ahmedabad",
+                            "addressRegion": "Gujarat"
+                        }
+                    }
+                }}
+            />
             {/* Hero */}
             <section style={{
                 padding: '10rem 0 6rem',

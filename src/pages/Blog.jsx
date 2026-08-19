@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import SEO from '../components/SEO';
 import SectionTitle from '../components/common/SectionTitle';
 import { ArrowRight } from 'lucide-react';
 import { blogData } from '../data/blogData';
@@ -6,6 +7,11 @@ import { blogData } from '../data/blogData';
 export default function Blog() {
     return (
         <div className="fade-in">
+            <SEO
+                title="Legal Information & Guidance | Ahmedabad | Blog | Advocate Hetali H. Prajapati"
+                description="Read legal insights, guidelines, and information on property laws, marriage registration, family law, agreements, and government documentation in Ahmedabad."
+                url="/blog"
+            />
             <section style={{
                 padding: '10rem 0 6rem',
                 backgroundColor: 'var(--color-black)',

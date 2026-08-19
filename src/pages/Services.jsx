@@ -1,4 +1,5 @@
 import SectionTitle from '../components/common/SectionTitle';
+import SEO from '../components/SEO';
 import { Home, Users, FileSignature, Scale, Briefcase, ChevronRight, FileText } from 'lucide-react';
 import { useState } from 'react';
 
@@ -89,6 +90,11 @@ export default function Services() {
 
     return (
         <div>
+            <SEO
+                title="Legal Services in Ahmedabad | Documentation & Consultation | Advocate Hetali H. Prajapati"
+                description="Explore our specialized legal services in Ahmedabad including property documentation, marriage registration, divorce, leave & licence agreements, and affidavits."
+                url="/services"
+            />
             <section style={{
                 padding: '10rem 0 6rem',
                 backgroundColor: 'var(--color-black)',

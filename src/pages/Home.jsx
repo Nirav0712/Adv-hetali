@@ -1,4 +1,5 @@
 import Button from '../components/common/Button';
+import SEO from '../components/SEO';
 import SectionTitle from '../components/common/SectionTitle';
 import { Scale, Users, Home as HomeIcon, FileSignature, Landmark, ArrowRight, ShieldCheck, FileText } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -14,6 +15,30 @@ export default function Home() {
 
     return (
         <div>
+            <SEO
+                title="Advocate in Ahmedabad | Legal Consultant | Hetali H. Prajapati"
+                description="Advocate Hetali H. Prajapati provides professional legal consultation, property documentation, marriage registration, and specialized legal services in Ahmedabad, Gujarat."
+                url="/"
+                schema={{
+                    "@context": "https://schema.org",
+                    "@type": "LegalService",
+                    "name": "Advocate Hetali H. Prajapati",
+                    "url": "https://advocatehetali.com",
+                    "telephone": "+91 63514 47212",
+                    "email": "hhprajapati15@gmail.com",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "addressLocality": "Ahmedabad",
+                        "addressRegion": "Gujarat",
+                        "addressCountry": "IN"
+                    },
+                    "founder": {
+                        "@type": "Person",
+                        "name": "Hetali H. Prajapati",
+                        "jobTitle": "Advocate"
+                    }
+                }}
+            />
             {/* Premium Hero Section */}
             <section style={{
                 position: 'relative',
